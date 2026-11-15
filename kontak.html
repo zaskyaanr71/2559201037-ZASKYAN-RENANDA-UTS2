@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Warung Makan Sederhana</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="bar-atas">
+      <a class="logo" href="index.html">Warung Makan Sederhana</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="katalog.html">Menu</a></li>
+          <li><a href="kontak.html" aria-current="page">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Hubungi Kami</h1>
+      <article>
+        <p>Alamat: [isi alamat warung]</p>
+        <p>WhatsApp: [isi nomor] | Instagram: [isi akun instagram]</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Lokasi</h2>
+      <iframe src="https://www.google.com/maps?q=Warung+Makan+Sederhana+Airgegas&amp;output=embed" title="Peta lokasi Warung Makan Sederhana" loading="lazy"></iframe>
+    </section>
+
+    <section>
+      <h2>Kirim Pesan</h2>
+      <form action="#" method="get">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="hp">Nomor HP</label>
+        <input type="tel" id="hp" name="hp" pattern="[0-9]{10,13}" placeholder="08xxxxxxxxxx" required>
+
+        <label for="keperluan">Keperluan</label>
+        <select id="keperluan" name="keperluan" required>
+          <option value="">-- Pilih keperluan --</option>
+          <option value="pesan-antar">Pesan antar</option>
+          <option value="pesan-tempat">Pesan tempat</option>
+          <option value="saran">Kritik dan saran</option>
+        </select>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" minlength="10" maxlength="500" required></textarea>
+
+        <button class="tombol" type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Warung Makan Sederhana. Semua hak dilindungi.</p>
+  </footer>
+</body>
+</html>
